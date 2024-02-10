@@ -1,0 +1,145 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Montserrat', sans-serif;
+        }
+       
+        .page-width{
+            max-width: 100%;
+            padding: 0 5rem;
+            margin: auto;
+        }
+    h3.section-heading {
+        font-size: 50px;
+        margin: 0;
+        text-align: center;
+        padding: 50px;
+    }
+
+    .product-tab-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .product-tab-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        padding: 0;
+    }
+
+    ul.product-tab-items li {
+        list-style: none;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+    li.product-tab-item{
+        padding: 6px 8px;
+        background-color: #fff;
+        border-radius: 3px;
+        border: 1px solid #000;
+        margin: 10px 0;
+    }
+
+    li.product-tab-item.active {
+        background: #000;
+        color: #fff;
+
+    }
+
+    .product-tab-content {
+        display: none;
+    }
+    .product-tab-content.show {
+        display: block;
+    }
+    .product-card img{
+        max-width: 100%;
+    }
+    .grid {
+    display: grid;
+    grid-template-columns:  repeat(4, auto);
+    gap: 10px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+a.product-title {
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 10px;
+    color: #000;
+    font-weight: 600;
+}
+.product-info-bottom {
+    align-items: center;
+    margin-top: 20px;
+}
+.product-info-bottom p {
+    font-size: 20px;
+}
+a.button.button-primary {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 6px 10px;
+    border-radius: 3px;
+    border: 1px solid #000;
+    color: #000;
+    text-transform: uppercase;
+}
+.product-card:hover a.button.button-primary{
+    background-color: #000;
+    color: #fff;
+}
+.product-information{
+    padding: 10px;
+}
+a.product-tab-btn {
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #000;
+    font-weight: bold;
+}
+
+a.product-tab-btn:hover {
+    border-bottom: 2px solid #000;
+}
+.product-tab-content {
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 767px) {
+    h3.section-heading{
+        font-size: 30px;
+    }
+    .page-width {
+        padding: 0 1rem;
+    }
+
+    .grid {
+    grid-template-columns:  repeat(2, auto);
+}
+.product-tab-items{
+    display: block;
+    gap:10px;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+a.button.button-primary {
+    padding: 4px 5px;
+    font-size: 14px;
+}
+.product-info-bottom p {
+    font-size: 16px;
+}
+}
